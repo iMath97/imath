@@ -1,0 +1,69 @@
+@import 'partials/colors';
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10rem;
+    background-color: $mediumblue;
+
+    display: flex;
+}
+
+// nav
+nav {
+    width: 70%;
+    background-color: $black;
+    margin-left: 10rem;
+
+    a {
+        float: left;
+        text-decoration: none;
+        color: $white;
+        background-color: $black;
+        padding: 4.1rem 5.6rem;
+
+        &.active {
+            background-color: $mediumblue;
+        }
+    }
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+    .dropbtn {
+        color: $white;
+        background-color: $black;
+        padding: 4.1rem 5.6rem;
+
+        &.active {
+            background-color: $mediumblue;
+        }
+    }
+}
+
+.dropdown-content {
+    display: none;
+
+    a {
+        float: none;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+// logo
+.logo {
+    background-color: $black;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
