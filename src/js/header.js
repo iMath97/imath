@@ -15,6 +15,19 @@ $(document).ready(function () {
             case "home":
                 $("#home").addClass("active");
                 break;
+            case "brickbreaker":
+                $("#home").addClass("active");
+                $("#guides").addClass(" active");
+                $("#projects").addClass(" active");
+                $("#games").addClass(" active");
+                break;
+            case "rain":
+                $("#home").addClass("active");
+                $("#guides").addClass(" active");
+                $("#projects").addClass(" active");
+                $("#games").addClass(" active");
+                $("#javascript").addClass(" active");
+                break;
             case "setup":
                 $("#home").addClass("active");
                 $("#guides").addClass(" active");
