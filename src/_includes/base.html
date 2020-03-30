@@ -28,22 +28,26 @@
     <!-- Google Fonts css -->
 
     <!-- custom css -->
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="{{ style }}">
     <!-- Css End -->
 
     <!-- scripts -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src="js/header.js"></script>
+    <script src="{{ headerScript }}"></script>
     <!-- end scripts -->
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" id="home">Home</a>
+            <a href="/" id="home">Home</a>
             <div class="dropdown">
-                <p class="dropbtn">Guides <i class="fa fa-caret-down"></i></p>
+                <p class="dropbtn" id="guides">Guides <i class="fa fa-caret-down"></i></p>
+                <div class="dropdown-content">
+                    <a href="#">Backup script</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn" id="projects">Projects <i class="fa fa-caret-down"></i></p>
                 <div class="dropdown-content">
                     <a href="#">page</a>
                     <a href="#">page</a>
@@ -51,47 +55,31 @@
                 </div>
             </div>
             <div class="dropdown">
-                <p class="dropbtn">Projects <i class="fa fa-caret-down"></i></p>
+                <p class="dropbtn" id="games">Games <i class="fa fa-caret-down"></i></p>
                 <div class="dropdown-content">
-                    <a href="#">page</a>
-                    <a href="#">page</a>
-                    <a href="#">page</a>
+                    <a href="#">Brickbreaker</a>
                 </div>
             </div>
             <div class="dropdown">
-                <p class="dropbtn">Games <i class="fa fa-caret-down"></i></p>
+                <p class="dropbtn" id="javascript">Javascript <i class="fa fa-caret-down"></i></p>
                 <div class="dropdown-content">
-                    <a href="#">page</a>
-                    <a href="#">page</a>
-                    <a href="#">page</a>
+                    <a href="#">Rain</a>
                 </div>
             </div>
             <div class="dropdown">
-                <p class="dropbtn">Javascript <i class="fa fa-caret-down"></i></p>
+                <p class="dropbtn" id="info">Info <i class="fa fa-caret-down"></i></p>
                 <div class="dropdown-content">
-                    <a href="#">page</a>
-                    <a href="#">page</a>
-                    <a href="#">page</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <p class="dropbtn">Info <i class="fa fa-caret-down"></i></p>
-                <div class="dropdown-content">
-                    <a href="#">page</a>
-                    <a href="#">page</a>
-                    <a href="#">page</a>
+                    <a href="#">General info</a>
+                    <a href="info/setup">My setup</a>
                 </div>
             </div>
         </nav>
         <div class="logo">
-            <img src="img/logo.png" alt="logo">
+            <img src="{{ logo }}" alt="logo">
         </div>
     </header>
     <main>
         {{ content | safe }}
     </main>
-
-    
-    
 </body>
 </html>

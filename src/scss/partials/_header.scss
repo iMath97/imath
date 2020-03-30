@@ -1,5 +1,3 @@
-@import 'partials/colors';
-
 header {
     position: fixed;
     top: 0;
@@ -27,6 +25,10 @@ nav {
         &.active {
             background-color: $mediumblue;
         }
+
+        &:hover {
+            background-color: $mediumblue;
+        }
     }
 }
 
@@ -38,8 +40,13 @@ nav {
         color: $white;
         background-color: $black;
         padding: 4.1rem 5.6rem;
+        cursor: pointer;
 
         &.active {
+            background-color: $mediumblue;
+        }
+
+        &:hover {
             background-color: $mediumblue;
         }
     }

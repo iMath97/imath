@@ -9,10 +9,19 @@ $(document).ready(function () {
 
     function setActive(){
         let title = getTitle();
+        console.log(title);
 
         switch (title) {
             case "home":
                 $("#home").addClass("active");
+                break;
+            case "setup":
+                $("#home").addClass("active");
+                $("#guides").addClass(" active");
+                $("#projects").addClass(" active");
+                $("#games").addClass(" active");
+                $("#javascript").addClass(" active");
+                $("#info").addClass(" active");
                 break;
         }
 
