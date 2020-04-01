@@ -162,19 +162,18 @@ function setup(){
 function draw(){
     //general
     ctx.clearRect(0, 0, width, height);
-    ctx.fillStyle = "#34006B";
+    ctx.fillStyle = "#30979F";
     ctx.fillRect(0, 0, width, height);
 
     //player
-    ctx.fillStyle = "#7ACAFF";
+    ctx.fillStyle = "#272727";
     ctx.fillRect(posx, 750, playerWidth, playerHeight);
 
     //ball
-    ctx.fillStyle = "#968FFF";
+    ctx.fillStyle = "#165363";
     ctx.beginPath();
     ctx.ellipse(startposx, startposy, 15, 15, Math.PI/4, 0, 2 *Math.PI);
     ctx.fill();
-    ctx.stroke();
 
     if(direction == "no"){
         startposx += ballSpeed;
@@ -200,7 +199,7 @@ function draw(){
     if(initialized == 0){
         // console.log("init");
         //blocks
-        ctx.fillStyle = "#8F98FF";
+        ctx.fillStyle = "#272727";
         if(b1status == 1){
             ctx.fillRect(b1.bposx, b1.bposy, b1.bwidth, b1.bheight);   
         }
@@ -291,7 +290,7 @@ function move(){
         let tekst = "Game over";
         let lengteTekst = ctx.measureText(tekst).width;
         console.log(lengteTekst/2);
-        ctx.fillStyle = "#7B00FF";
+        ctx.fillStyle = "#272727";
         ctx.font = "60px Verdana";
         ctx.fillText(tekst, 235, 300);
         direction = "over";

@@ -14,10 +14,10 @@ for(let j = 0; j<raindrups;j++){
     randomposx[j] = Math.floor(Math.random()* width);
 }
 for(let k = 0; k<raindrups;k++){
-    randomposy[k] = Math.floor(Math.random()* 100);
+    randomposy[k] = Math.floor(Math.random()* height);
 }
 for(let l = 0; l<raindrups;l++){
-    velocity[l] = Math.floor(Math.random()* 25)+10;
+    velocity[l] = Math.floor(Math.random()* 35)+15;
 }
 
 function gameloop(){

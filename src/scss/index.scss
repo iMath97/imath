@@ -1,1 +1,28 @@
 @import "partials/global";
+
+.banner {
+    padding-top: 10rem;
+    height: 70vh;
+    background: linear-gradient($black, $darkblue);
+
+    .content {
+        h1 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.guides {
+    height: 40vh;
+    background-color: $white;
+}
+
+.projects {
+    height: 40vh;
+    background-color: $darkblue;
+}
