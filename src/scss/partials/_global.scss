@@ -47,3 +47,18 @@ h1 {
 	margin-top: 2rem;
 	margin-bottom: 3rem;
 }
+
+footer {
+	background-color: $darkblue;
+	height: 10rem;
+	display: flex;
+	align-items: center;
+	
+	.content {
+		display: flex;
+		justify-content: center;
+		p {
+			color: $white;
+		}
+	}
+}
