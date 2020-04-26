@@ -1,0 +1,67 @@
+---
+title: Backup-script | iMath
+layout: base.html
+style: ../../css/backupscript.css
+logo: ../../img/logo.png
+headerScript: ../../js/header.js
+---
+
+<div class="container">
+    <div class="examples">
+        <div class="wrapper content">
+            <h1>Auto backup program</h1>
+            <section>
+                <h2>Some examples</h2>
+                <p>This script can be used to make backups of almost everything such as your music collection, your photos, important files that you update on a regular basis or even gamesaves.</p>
+                <p>Today I will show you how to write this script and use it for a Minecraft world.</p>
+            </section>
+        </div>
+    </div>
+    <div class="setup">
+        <div class="wrapper">
+            <h2>Setting up</h2>
+            <div class="content">
+                <img src="../../img/guides/autobackup/sublimesave.PNG" alt="How to save the file" id="savescript">
+                <div class="text">
+                    <p>First you need to make a simple text document in a program you like such as Notepad, Notepad++, Sublime text or even something else. I will be using Sublime text.</p>
+                    <p>Then you have to save it as a .bat file (see picture).</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="code">
+        <div class="wrapper">
+            <h2>Code</h2>
+            <div class="content">
+                <div class="text">
+                    <p>After saving the file it is time to code the program. In the next image you can see the code. I will try to explain everything.</p>
+                    <p>Line 1: this will hide the commands in the cmd (not necessary).</p>
+                    <p>Line 2: this will set the output color in the cmd to green (not necessary).</p>
+                    <p>Line 3: this will set the title of your cmd (not necessary).</p>
+                    <p>Line 4 and 5: this creates a variable called 'name' and stores the Minecraft world name and the current date. Change 'WORLDNAME' to the name of your Minecraft world.</p>
+                    <p>Line 6: this will copy the world files to your destination. You need to copy this path. Change 'USERNAME' to your computer username. Change '4ever' to the name of your world. The second path is your destination. You can change this to whatever you like. You just have to keep '\%name%' on the end of the path. </p>
+                    <p>Line 7: this will add a pause on the end of the script so you can see the result.</p>
+                </div>
+                <img src="../../img/guides/autobackup/codebackup.PNG" alt="The code" id="code">
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="run">
+        <div class="wrapper">
+            <h2>Running</h2>
+            <div class="content">
+                <div class="img">
+                    <img src="../../img/guides/autobackup/demo.PNG" alt="Demo" id="demo">
+                    <img src="../../img/guides/autobackup/result.PNG" alt="The result" id="result">
+                </div>
+                <div class="text">
+                    <p>Your program is ready to run. When you run the program it wil ask you to specify a file or destination. Just press 'D' from directory.</p>
+                    <p>Your program will run and these are the results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

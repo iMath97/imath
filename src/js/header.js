@@ -15,6 +15,10 @@ $(document).ready(function () {
             case "home":
                 $("#home").addClass("active");
                 break;
+            case "backup-script":
+                $("#home").addClass("active");
+                $("#guides").addClass(" active");
+                break;
             case "brickbreaker":
                 $("#home").addClass("active");
                 $("#guides").addClass(" active");

@@ -1,0 +1,139 @@
+@import "partials/global";
+
+.examples {
+    padding-top: 10rem;
+    height: 70vh;
+    background: linear-gradient($black, $darkblue);
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+
+        h1, h2 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.setup {
+    background-color: $white;
+    height: 70vh;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        color: $black;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    .content {
+        display: flex;
+
+        img {
+            width: 50%;
+            height: 100%;
+        }
+
+        .text {
+            width: 45%;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            
+            p {
+                color: $black;
+            }
+        }
+    }
+}
+
+.code {
+    background-color: $grey;
+    height: 70vh;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        color: $black;
+        margin-bottom: 2rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 50%;
+            height: 100%;
+        }
+
+        .text {
+            width: 45%;
+            margin-right: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                color: $black;
+            }
+        }
+    }   
+}
+
+.run {
+    background-color: $white;
+    height: 70vh;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        color: $black;
+        margin-bottom: 2rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+
+        .img {
+            width: 50%;
+
+            img {
+                width: 60%;
+                height: 50%;
+            }
+        }
+
+        .text {
+            width: 45%;
+            margin-left: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                color: $black;
+            }
+        }
+    }
+}
