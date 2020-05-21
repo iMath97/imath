@@ -8,6 +8,8 @@
     .content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        height: 80%;
 
 
         h1, h2 {
@@ -32,8 +34,6 @@
     h2 {
         color: $black;
         margin-bottom: 2rem;
-        font-weight: bold;
-        font-size: 4rem;
     }
     .content {
         display: flex;
@@ -45,7 +45,7 @@
 
         .text {
             width: 45%;
-            margin-left: 5%;
+            margin-left: 5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -53,6 +53,7 @@
             
             p {
                 color: $black;
+                line-height: 3.4rem;
             }
         }
     }
@@ -69,8 +70,6 @@
     h2 {
         color: $black;
         margin-bottom: 2rem;
-        font-size: 4rem;
-        font-weight: bold;
     }
 
     .content {
@@ -78,7 +77,7 @@
         align-items: center;
 
         img {
-            width: 50%;
+            width: 55%;
             height: 100%;
         }
 
@@ -91,6 +90,7 @@
 
             p {
                 color: $black;
+                text-align: justify;
             }
         }
     }   
@@ -107,22 +107,17 @@
     h2 {
         color: $black;
         margin-bottom: 2rem;
-        font-size: 4rem;
-        font-weight: bold;
     }
 
     .content {
         display: flex;
         align-items: center;
 
-        .img {
+        img {
             width: 50%;
-
-            img {
-                width: 60%;
-                height: 50%;
-            }
+            height: 100%;
         }
+        
 
         .text {
             width: 45%;

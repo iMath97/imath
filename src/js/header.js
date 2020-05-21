@@ -45,5 +45,21 @@ $(document).ready(function () {
     }
 
     setActive();
+
+    window.addEventListener('scroll', () => {
+        let scrollPos = window.scrollY;
+        if(scrollPos == 0){
+            $("#header").css("height", "10rem");
+            $("#logo").css("display", "block");
+            $(".dropbtn").css("padding", "3.95rem 5.6rem");
+            $("#home").css("padding", "3.95rem 5.6rem");
+        } else {
+            $("#header").css("height", "5rem");
+            $("#logo").css("display", "none");
+            $(".dropbtn").css("padding", "1.47rem 5.6rem");
+            $("#home").css("padding", "1.47rem 5.6rem");
+        }
+        
+    });
 });
 
