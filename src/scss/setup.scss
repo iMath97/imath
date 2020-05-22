@@ -1,1 +1,98 @@
 @import "partials/global";
+
+.focus {
+    padding-top: 10rem;
+    height: 70vh;
+    background: linear-gradient($black, $darkblue);
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80%;
+
+
+        h1, h2 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 50rem;
+
+    .swiper-wrapper {
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: $grey;
+
+            img {
+                max-height: 40rem;
+                border-radius: 2rem;
+            }
+        }
+    }
+}
+
+.table {
+    table {
+        tr {
+            line-height: 3.5rem;
+        }
+
+        tr th {
+            text-align: left;
+            color: $black;
+        }
+
+        tr td {
+            color: $black;
+
+            a {
+                text-decoration: none;
+                color: $black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .one {
+            width: 20rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.mainSystem {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customization {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $grey;
+}
+
+.peripherals {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
