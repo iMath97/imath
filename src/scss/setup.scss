@@ -16,18 +16,47 @@
             color: $white;
         }
 
-        p {
-            color: $white;
-            margin-bottom: 2rem;
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .text {
+                width: 50%;
+
+                h2 {
+                    color: $white;
+                }
+
+                p {
+                    color: $white;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .img {
+                img {
+                    width: 65rem;
+                }
+            }
         }
     }
 }
 
 .swiper-container {
     width: 100%;
-    height: 50rem;
+    height: 55rem;
+    padding-bottom: 2rem;
+    background-color: $grey;
+
+    h2 {
+        text-align: center;
+        margin-top: 3rem;
+    }
 
     .swiper-wrapper {
+        height: 80%;
+
         .content {
             display: flex;
             justify-content: center;
@@ -74,25 +103,51 @@
     }
 }
 
-.mainSystem {
+.section {
     height: 70rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.customization {
-    height: 70rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $grey;
-}
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.peripherals {
-    height: 70rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    &:nth-child(even){
+        background-color: $grey;
+    }
+
+    &.mainSystem .img { 
+        width: 50%;
+        
+        img {
+            width: 60rem;
+        }
+    }
+
+    &.customization { 
+        
+        .img {
+            width: 50%;
+
+            img {
+                width: 40rem;
+            }
+        }
+
+        .table {
+            width: 50%;
+        }
+    }
+
+    &.peripherals .img { 
+        width: 50%;
+
+        img {
+            width: 40rem;
+        }
+    }
 }
