@@ -41,6 +41,7 @@ nav {
         background-color: $black;
         padding: 3.98rem 5.6rem;
         cursor: pointer;
+        width: 20rem;
 
         &.active {
             background-color: $mediumblue;
@@ -59,6 +60,8 @@ nav {
         float: none;
         text-decoration: none;
         display: block;
+        width: 20rem;
+        text-align: center;
     }
 }
 
