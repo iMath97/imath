@@ -1,28 +1,52 @@
 @import "partials/global";
 
-.banner {
+.welcome {
     padding-top: 10rem;
-    height: 70vh;
+    height: 89.3vh;
     background: linear-gradient($black, $darkblue);
 
     .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80%;
+        
         h1 {
             color: $white;
         }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-        p {
-            color: $white;
-            margin-bottom: 2rem;
+            .text {
+                width: 50%;
+
+                h2 {
+                    color: $white;
+                }
+
+                p {
+                    color: $white;
+                    margin-bottom: 2rem;
+                    text-align: justify;
+                }
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $lightblue;
+                    }
+                }
+            }
+
+            .img {
+                img {
+                    width: 45rem;
+                }
+            }
         }
     }
-}
-
-.guides {
-    height: 40vh;
-    background-color: $white;
-}
-
-.projects {
-    height: 40vh;
-    background-color: $darkblue;
 }
