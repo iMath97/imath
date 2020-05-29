@@ -2,7 +2,7 @@
 
 .welcome {
     padding-top: 10rem;
-    height: 89.3vh;
+    height: 70vh;
     background: linear-gradient($black, $darkblue);
 
     .content {
@@ -47,6 +47,92 @@
                     width: 45rem;
                 }
             }
+        }
+    }
+}
+
+.myself {
+    height: 70vh;
+    background-color: $grey;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80%;
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .text {
+                width: 50%;
+
+                h2 {
+                    color: $black;
+                }
+
+                p {
+                    color: $black;
+                    margin-bottom: 2rem;
+                    text-align: justify;
+                }
+            }
+
+            .img {
+                img {
+                    width: 65rem;
+                }
+            }
+        }
+    }
+}
+
+
+.what {
+
+    .what-content {
+        padding: 3rem 0;
+    }
+
+    .section {
+        height: 50rem;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                text-align: justify;
+                width: 60%;
+            }
+        }
+
+        &:nth-child(odd){
+            background-color: $grey;
+        }
+
+        &.guides img{
+            width: 55rem;
+        }
+
+        &.projects img{
+            width: 40rem;
+        }
+
+        &.games img {
+            width: 35rem;
+            height: 100%;
+        }
+    
+        &.javascript img {
+            width: 45rem;
         }
     }
 }
